@@ -1,0 +1,88 @@
+extends layout
+block content
+ #feuille_aventure
+    #discipline_kai
+        h1 DISCIPLINES KAI
+        ol
+            li  Le Camouflage
+
+            li  La Chasse
+
+            li  L&apos;Orientation
+
+            li  La Gu&eacute;rison
+
+            li  La Ma&icirc;trise des Armes
+
+    #discipline_kai_supplementaires
+        h1 DISCIPLINES KAI SUPPLEMENTAIRES
+        ul
+            li 6 D&eacute;cipline : si vous avez d&eacute;j&agrave; accoumpli avec succ&egrave;s une mission
+
+            li 7 D&eacute;cipline : si vous avez d&eacute;j&agrave; accoumpli avec succ&egrave;s une mission
+
+            li 8 D&eacute;cipline : si vous avez d&eacute;j&agrave; accoumpli avec succ&egrave;s une mission
+
+            li 9 D&eacute;cipline : si vous avez d&eacute;j&agrave; accoumpli avec succ&egrave;s une mission
+
+   #sac_a_dos
+        h1 SAC A DOS
+        ol
+            li  item
+
+            li  item
+
+            li  item
+
+            li  item
+
+            li  item
+
+            li  item
+
+            li  item
+
+            li  item
+   #repas
+       h1 REPAS
+       ol
+           li  repas1
+
+           li  repas2
+
+           li  repas1
+       p 3 PE si vous n&apos;avez pas de repas lorsque vous manger
+
+   #bourse
+       h1 BOURSES
+       strong 45 Pi&egrave;ces d&apos;Or
+       p (50 Pi&egrave;ces d&apos;Or maximum)
+
+   #habilite
+       h1 HABILETE
+       p BAKANAL HABILETE
+   #endurance
+       h1 ENDURANCE
+       p 100
+   #detail_combats
+        h1 DETAIL DES COMBATS
+        #endurance_loup_solitaire
+            h3 Endurance
+        #endurance_ennemi
+            h3 Endurance
+        // debut de boucle , ajout des numeros aux elements (#loup_solitaire , #quotient_attaque, #ennemi )par exemple #loup_solitaire_{i} le i doit aller de 1 a 5
+        #loup_solitaire
+            h3 Loup solitaire
+            p 12
+        #quotient_attaque
+            h3 Quotient d&apos;attaque
+            p 0.67
+        #ennemi
+            h3 Ennemi
+            p 25
+        // fin de boucle
+        #page1_image
+
+            img(src='/images/page1_image.gif')
+
+    a(href='./page160') rendez-vous au 160

@@ -1,0 +1,13 @@
+// TP1 - 1608366_1580231
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        //meta(http-equiv='Content-Type', content='text/html; charset=iso-8859-1')
+    body
+        include header
+        cite Jeu/#{title}
+        h1 #{title}
+        block content
+        include footer.jade

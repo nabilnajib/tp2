@@ -1,0 +1,12 @@
+fieldset.singleRow
+    -var discipline =  [ 'Camouflage', 'Chasse', 'Sixième sens', 'Orientation', 'Guérison','Maîtrise des Armes', 'Bouclier Psychique', 'Puissance Psychique', 'Communication Animale', 'Maîtrise Psychique de la Matière' ]
+    legend Discipline:
+    label
+        = "Veuillez choisir 5 disciplines..."
+    each val in [1, 2, 3, 4, 5]
+        p #{val}: &ensp;
+            select
+                for item in discipline
+                    option #{item}
+        br
+        br
