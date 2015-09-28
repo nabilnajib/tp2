@@ -5,13 +5,14 @@
         a(href='index')
             img(src='/images/header_image.png', alt='Loup Solitaire')
     h1 Loup Solitaire
-    nav.menu
-        ul
-            each val, key in menu
-                if active === key
-                    li.active
-                        a(href=val, id='menuActive')= key
-                else
-                    li
-                        a(href=val, id='menuNonActive')= key
+    div.divColor
+        nav.menu
+            ul
+                each val, key in menu
+                    if active == key
+                        li.active
+                            a(href=val)= key
+                    else
+                        li.nonActive
+                            a(href=val)= key
 
