@@ -1,14 +1,16 @@
+-var menu = { 'accueil': './index', 'formulaire': './form', 'aide': './aide' };
+- var active;
 #header
     #logo
         a(href='index')
             img(src='/images/header_image.png', alt='Loup Solitaire')
     h1 Loup Solitaire
-    nav
+    nav.menu
         ul
-            li
-                a(href='./index') Acceuil
-            li
-                a(href='./form') Cr&eacute;ation du joueur
-            li
-                a(href='./aide') Aide
+            each val, key in menu
+                li
+                    if active === key
+                        a.active(href=val, id='menuActive')= key
+                    else
+                        a(href=val, id='menuNonActive')= key
 
