@@ -8,9 +8,10 @@
     nav.menu
         ul
             each val, key in menu
-                li
-                    if active === key
-                        a.active(href=val, id='menuActive')= key
-                    else
+                if active === key
+                    li.active
+                        a(href=val, id='menuActive')= key
+                else
+                    li
                         a(href=val, id='menuNonActive')= key
 
